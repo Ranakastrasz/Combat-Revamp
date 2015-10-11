@@ -1,0 +1,11 @@
+
+{
+  "name": "Combat-Revamp",
+  "version": "0.1.0",
+  "title": "Combat Revamp",
+  "author": "Ranakastrasz",
+  "contact": "~",
+  "homepage": "",
+  "description": "Alters balance of all warfare related things.",
+  "dependencies": ["base"]
+}
