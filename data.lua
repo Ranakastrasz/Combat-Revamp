@@ -3,23 +3,57 @@
     Physical -- Anti-light. All others resist.
     Explosive -- Anti-heavy, Light resists
     Fire -- Anti-building, Anti-light
-    
+    Piercing -- Removed, was to ignore all reductions, no longer needed due to possiblity of vulnerabilities.
 
-    Bullets -> Anti-light, Physical + Splash
+    Bullets -> Anti-Light
     Shells -> Anti-Light, Anti-Heavy
     Rockets -> Anti-Heavy, Anti-Building
     Flamer -> Anti-Light, Anti-Building
     
-    Landmines, Various, Requires Trigger-filter/manual trigger
-    Robots, Various, Need immortality code of some kind
+    Landmines, Various, Requires Trigger-filter/manual trigger, so unlikely to implement.
+    Robots, Various, Need immortality code of some kind. Something like this exists? Roboport combat mod?
     
-    Pistol +Dmg, +Rng
-    Smg +Spd
+    Pistol: +50% Damage, Range 15 -> 25, Recoil 0.7 -> 0.3
+    Submachine Gun: Recoil 0.7 -> 0.5
     
-    Shotgun +Dmg, +Rng
-    Cb Shotgun +Spd
+    Shotgun: Range 20 -> 17.5, +50% Damage, Recoil 0.6 -> 0.3
+    Cb Shotgun: Range 20 -> 15, Damage bonus removed, Recoil 0.5 -> 0.4
     
-    Rocket +Massive range
+    Rocket: Range 22 -> 45, Recoil 0.8 -> 0.6
+    
+    Flame Thrower: cooldown 2 -> 4, Recoil 0.6 -> 0.4
+
+
+    
+Bullets
+    Basic  
+    Cap: 10 -> 30
+    Cost: 2 Iron -> 2 Iron + 1 Coal
+    
+    Piercing  -> Anti-personnel
+    Cap: 10 -> 30
+    Damage: 5 Physical -> 3 Physical + 1 explosive, + 1 Physical in 2 AOE.
+    Cost: 1 Steel, 5 copper -> 1 Basic Magazine, 1 Steel, 5 Copper.
+    
+    Bolter (New)
+    Cap: 10
+    Damage: 3 explosion, + 5 Physical in 2 AOE
+    Cost: 4 Steel, 2 Plastic, 1 Adv Circuit, 1 Explosives
+    
+Shells
+    Basic
+    Cap: 10 -> 4
+    Damage: (12x) 4 Physical -> (12x) 2 Physical + 2 Explosive
+    
+    Piercing (Renamed Heavy)
+    Cap: 10 -> 4
+    Damage: (16x) 6 Physical -> (16x) 4 Physical + 4 Explosive
+    
+Rockets
+    Basic -> Explosive (Deals mainly direct explosive damage
+    
+    Explosive -> Shredder (Deals mainly wide spread damage, but less focused)
+    
     
     Bullets
         Old, 2 Physical, 5 Physical

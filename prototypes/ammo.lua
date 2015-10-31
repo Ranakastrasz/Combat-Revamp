@@ -84,7 +84,7 @@ data.raw.ammo["piercing-bullet-magazine"].ammo_type.action.action_delivery.targe
     },
     {
         type = "damage",
-        damage = { amount = 3 , type = "physical"} -- 4, no splash
+        damage = { amount = 3 , type = "physical"} -- 5, no splash
     },
     {
         type = "damage",
@@ -165,7 +165,7 @@ data.raw.projectile["shotgun-pellet"].action.action_delivery.target_effects =
     },
     {
         type = "damage",
-        damage = {amount = 2, type = "explosion"} -- 4 x 12
+        damage = {amount = 2, type = "explosion"}
     }
 }
 data.raw.projectile["piercing-shotgun-pellet"].action.action_delivery.target_effects =
@@ -443,13 +443,13 @@ data.raw["ammo"]["flame-thrower-ammo"].ammo_type =
                 type = "instant",
                 target_effects =
                 {
-                    {
+                    --[[{
                         type = "create-entity",
                         entity_name = "flame-thrower-cloud"
-                    },
+                    },]]--
                     {
                         type = "damage",
-                        damage = { amount = 1, type="fire"}
+                        damage = { amount = 3, type="fire"}
                     }
                 }
             }
@@ -469,13 +469,13 @@ data.raw["ammo"]["flame-thrower-ammo"].ammo_type =
                 type = "instant",
                 target_effects =
                 {
-                    {
+                    --[[{
                         type = "create-entity",
                         entity_name = "flame-thrower-cloud"
-                    },
+                    },]]--
                     {
                         type = "damage",
-                        damage = { amount = 1, type="fire"}
+                        damage = { amount = 3, type="fire"}
                     }
                 }
             }
@@ -495,13 +495,13 @@ data.raw["ammo"]["flame-thrower-ammo"].ammo_type =
                 type = "instant",
                 target_effects =
                 {
-                    {
+                    --[[{
                         type = "create-entity",
                         entity_name = "flame-thrower-cloud"
-                    },
+                    },]]--
                     {
                         type = "damage",
-                        damage = { amount = 1, type="fire"}
+                        damage = { amount = 3, type="fire"}
                     }
                 }
             }
@@ -569,11 +569,11 @@ data:extend(
                     {
                         type = "create-entity",
                         entity_name = "flame-thrower-cloud"
-                    },
+                    }--[[,
                     {
                         type = "damage",
                         damage = { amount = 0.25, type = "fire"}
-                    }
+                    }]]--
                 }
             }
         },
