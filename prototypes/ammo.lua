@@ -443,10 +443,10 @@ data.raw["ammo"]["flame-thrower-ammo"].ammo_type =
                 type = "instant",
                 target_effects =
                 {
-                    --[[{
+                    {
                         type = "create-entity",
                         entity_name = "flame-thrower-cloud"
-                    },]]--
+                    },
                     {
                         type = "damage",
                         damage = { amount = 3, type="fire"}
@@ -469,10 +469,10 @@ data.raw["ammo"]["flame-thrower-ammo"].ammo_type =
                 type = "instant",
                 target_effects =
                 {
-                    --[[{
+                    {
                         type = "create-entity",
                         entity_name = "flame-thrower-cloud"
-                    },]]--
+                    },
                     {
                         type = "damage",
                         damage = { amount = 3, type="fire"}
@@ -495,10 +495,10 @@ data.raw["ammo"]["flame-thrower-ammo"].ammo_type =
                 type = "instant",
                 target_effects =
                 {
-                    --[[{
+                    {
                         type = "create-entity",
                         entity_name = "flame-thrower-cloud"
-                    },]]--
+                    },
                     {
                         type = "damage",
                         damage = { amount = 3, type="fire"}

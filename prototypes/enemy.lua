@@ -181,7 +181,7 @@ prototype = data.raw["unit-spawner"]["biter-spawner"]
       },
       {
         type = "explosion",
-        decrease = 5, --10  -- 5
+        decrease = 0,--5 --10  -- 5
         percent = 0  --50 -- 15
       },
       {
@@ -212,7 +212,7 @@ prototype = data.raw["unit-spawner"]["spitter-spawner"]
       },
       {
         type = "explosion",
-        decrease = 5, --10  -- 5
+        decrease = 0, --5--10  -- 5
         percent = 0  --50 -- 15
       },
       {
@@ -302,7 +302,7 @@ prototype = data.raw["turret"]["big-worm-turret"]
       },
       {
         type = "explosion",
-        decrease = 1, --25-- 10
+        decrease = 0,--1 --25-- 10
         percent = 0  --75 -- 30
       },
       {
