@@ -1,5 +1,10 @@
 --[[
 
+    The current setup is wrong. It makes things far easier atm.
+    Shotgun deals too much damage to heavy units. At best, I want 2-3x as much damage, but not one-shotting big biters.
+    Rockets can be stronger than shotgun, due to high resource cost. Even with range, since shotgun also tears through lessers and gets demi-splash.
+    Physical resistance linear should be added again.
+   
     Physical -- Anti-light. All others resist.
     Explosive -- Anti-heavy, Light resists
     Fire -- Anti-building, Anti-light
@@ -35,6 +40,7 @@ Bullets
     Damage: 5 Physical -> 3 Physical + 1 explosive, + 1 Physical in 2 AOE.
     Cost: 1 Steel, 5 copper -> 1 Basic Magazine, 1 Steel, 5 Copper.
     
+
     Bolter (New)
     Cap: 10
     Damage: 3 explosion, + 5 Physical in 2 AOE
@@ -61,12 +67,19 @@ Rockets
     Adv -> 3 Physical, 1 explosive, 1 Physical radius 2 - 30 rounds
     Bolter ->  3 Explosive, 5 Physical Radius 4 - 10 rounds
     
+    Basic -> Good vs light biters
+    Adv -> Good vs swarms of light, somewhat vs heavier.
+    Bolter -> Good vs all biters, even swarms of heavier.
+   
+    
     Shell
         Old, 12x4 Physical, 16x6 Physical
         Basic -> 12x4 Physical - 10 rounds
         Advanced -> 16x 4 Physical, 1 Explosive. - 10 rounds
         -- Done
         Deals lots of normal damage.
+        Basic -> Good vs light, minor vs heavy.
+        ADvanced -> Good vs all biters, limited effect on heavy.
     Rocket
         Deals high explosive and piercing damage.
         Advanced has extra splash with large Aoe, more direct damage, but less piercing.
@@ -74,12 +87,14 @@ Rockets
         Basic -> 60 Explosive
         Adv -> 30 Explosive, and 20 physical 10 explosive in 6.5 radius
         -- Done
+        Basic -> Good vs heavy and buildings.
+        Advannce -> Goods vs crowds.
     Flamer
         Unknown old stats
         mags -> 30 from old 50
         Rate 30/sec
         Deal 2x3 damage with falloff in range of 9. Extra damage per second on impact and random spots in target area.
-        
+        Good vs buildings, light biters.
     
     Tank Shells
         150 Physical, 50 explosive
@@ -88,7 +103,7 @@ Rockets
         Basic -> 400 physical, 100 explosive
         Advanced -> 200 physical + 80 explosion, 4 radius
     
-    
+        Good vs buildings, heavy biters.
     -- Lasers??
     --Drones?
     
@@ -128,33 +143,34 @@ Rockets
     Medium 350 hp, 4 physical armor, 5 explosive armor, 15 explosive resistance
     Large -> 500 hp, 8 physical armor, 10 explosive armor, 30 explosive resistance
     
-    1
+    
     Biters
-    Small 15 Hp,  5 Explosive armor, 90 explosive resistance.
-    Medium 75 hp  2 Physical armor, 50 physical Resistance, 50% fire resistance, 10 explosive armor, 50 explosive resistance.
-    Large 375 Hp, 4 Physical armor, 75 Physical Reistance, 75% fire resistance
+    Small 15 Hp,  2x fire vuln
+    Medium 75 hp  20% phy resist, 2x exp vuln, 
+    Large 375 Hp, 40% phy resist, 3x exp vuln, 50% fire resist
+    Behemoth, 5000Hp, 60% phy resist, 4x exp vuln, 75% fire resist
     
     Spitters
-    Small 10 Hp,  5 Explosive armor, 90 explosive resistance.
-    Medium 50 Hp, 2 Physical armor, 50 physical Resistance, 50% fire resistance, 10 explosive armor, 50 explosive resistance.
-    Large 200 Hp, 2 Physical Armor, 75 Physical Resistance 50% fire resistance
+    Small 10 Hp,   2x fire vuln
+    Medium 50 Hp, 20% phy resist, 2x exp vuln, 
+    Large 200 Hp, 40% phy resist, 3x exp vuln, 50% fire resist
+    Behemoth 2000Hp, 60% phy resist, 4x exp vuln, 75% fire resist
     
     Spawner
     Light 350 Hp, 2 Physical armor, 50 Physical Resistance
     Armoured 1000 Hp, 4 Physical armor, 75 Physical Resistance, 5 Explosive armor, 25% explosive resistance
     Hardened 2500 Hp, 10 physical armor, 90 Physical Resistance, 25 Explosive armor, 75% Explosive Resistance.
     
-    Current: 1000 Hp, 4 physical armor, 75 resist, 10 explosion armor, 50 explosion resistance.
+    Current: 1000 Hp, 4 physical armor, 50 resist, 0 explosion armor, 0 explosion resistance. 75 Las/elect resists, 3x fire vul
     
     Worm
-    small 200 hp, 2 physical armor, 50 physical resistance
-    Medium 500 hp, 4 physical armor, 75 Physical resistance, 5 explosive armor, 25% explosive resistance
-    Large -> 1000 hp, 10 physical armor, 90 physical resistance, 25 explosive armor, 75% explosive resistance
+    small 200 hp, 1 physical armor, 40 physical resistance 75% laser/electric resist, 2x fire vuln
+    Medium 500 hp, 2 physical armor, 60 physical resistance 85% laser/electric resist, 2.5x fire vuln
+    Large -> 1000 hp, 3 physical armor, 80 physical resistance 90% laser/electric resist, 3x fire vuln
     
     
-    Heavier Biters and spitters get physical resistance and fire resistance. Explosives are still fully effective on them
-    Spawners get extreme physical resistance, to near immunity. They get significant explosive resistance as well. Fire and piercing have full effect.
     
+    Current
     
     Military 1 
     Shotgun
@@ -198,13 +214,16 @@ Rockets
     Poison/Slowdown Capsles
     -> Combat Shotgun Tech
     -> Tank Tech
+        -> Upgrades
     -> Incendiary Grenade
     -> Rocket Tech
+        ->Upgrades
     -> Bolter Rounds
     
     Military 4
-    -> Heavy Shells
+    -> Heavy Shotgun Shells
     -> Shredder Rockets
+    -> Explosive Tank shells
     -> Krak Grenade
     
     

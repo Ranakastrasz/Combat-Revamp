@@ -25,7 +25,7 @@ prototype = data.raw["unit"]["medium-biter"]
     {
       {
         type = "physical",
-        decrease = 0, --2 -- 4
+        decrease = 2, --2 -- 4
         percent = 20 -- 50
       },
       {
@@ -45,8 +45,8 @@ prototype = data.raw["unit"]["big-biter"]
     {
       {
         type = "physical",
-        decrease = 0, --4 -- 8
-        percent = 40, --75
+        decrease = 4, --4 -- 8
+        percent = 30, --75
       },
       {
         type = "explosion",
@@ -65,8 +65,8 @@ prototype = data.raw["unit"]["behemoth-biter"]
     {
       {
         type = "physical",
-        decrease = 0, --4 -- 8
-        percent = 60, --75
+        decrease = 6, --4 -- 8
+        percent = 40, --75
       },
       {
         type = "explosion",
@@ -111,7 +111,7 @@ prototype = data.raw["unit"]["medium-spitter"]
     {
       {
         type = "physical",
-        decrease = 0, --2 -- 0
+        decrease = 2, --2 -- 0
         percent = 20 --50 -- 0
       },
       {
@@ -133,8 +133,8 @@ prototype = data.raw["unit"]["big-spitter"]
     {
       {
         type = "physical",
-        decrease = 0, --4  -- 0
-        percent = 40, --75 -- 0
+        decrease = 4, --4  -- 0
+        percent = 30, --75 -- 0
       },
       {
         type = "explosion",
@@ -155,8 +155,8 @@ prototype = data.raw["unit"]["behemoth-spitter"]
     {
       {
         type = "physical",
-        decrease = 0, --4 -- 0
-        percent = 60, --75 -- 0
+        decrease = 6, --4 -- 0
+        percent = 40, --75 -- 0
       },
       {
         type = "explosion",
@@ -197,7 +197,7 @@ prototype = data.raw["unit-spawner"]["biter-spawner"]
       {
         type = "fire",
         decrease = 0,
-        percent = -200
+        percent = -150
       }
     }
     
@@ -228,7 +228,7 @@ prototype = data.raw["unit-spawner"]["spitter-spawner"]
       {
         type = "fire",
         decrease = 0,
-        percent = -200
+        percent = -150
       }
     }
 prototype = data.raw["turret"]["small-worm-turret"]
@@ -237,8 +237,8 @@ prototype = data.raw["turret"]["small-worm-turret"]
     {
       {
         type = "physical",
-        decrease = 1, --2  -- 0
-        percent = 40 --5 -- 0
+        decrease = 0, --2  -- 0
+        percent = 0 --5 -- 0
       },
       {
         type = "explosion",
@@ -268,7 +268,7 @@ prototype = data.raw["turret"]["medium-worm-turret"]
       {
         type = "physical",
         decrease = 2,--4  -- 4
-        percent = 60 --50 -- 0
+        percent = 25 --50 -- 0
       },
       {
         type = "explosion",
@@ -297,8 +297,8 @@ prototype = data.raw["turret"]["big-worm-turret"]
     {
       {
         type = "physical",
-        decrease = 3, --10  -- 8
-        percent = 80 --90-- 0
+        decrease = 6, --10  -- 8
+        percent = 50 --90-- 0
       },
       {
         type = "explosion",

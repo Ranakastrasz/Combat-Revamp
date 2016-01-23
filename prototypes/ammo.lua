@@ -34,7 +34,11 @@ data:extend(
                         },
                         {
                             type = "damage",
-                            damage = { amount = 3 , type = "explosion"}
+                            damage = {amount = 3, type = "explosion"}
+                        },
+                        {
+                            type = "damage",
+                            damage = { amount = 5 , type = "physical"}
                         },
                         {
                             type = "nested-result",
@@ -50,7 +54,11 @@ data:extend(
                                     {
                                         {
                                             type = "damage",
-                                            damage = {amount = 5, type = "physical"}
+                                            damage = {amount = 3, type = "explosion"}
+                                        },
+                                        {
+                                            type = "damage",
+                                            damage = { amount = 5 , type = "physical"}
                                         },
                                         {
                                             type = "create-entity",
@@ -116,43 +124,7 @@ data.raw.ammo["piercing-bullet-magazine"].ammo_type.action.action_delivery.targe
     }
 }
 
---data.raw.ammo["bolter-bullet-magazine"].ammo_type.action.action_delivery.target_effects =
---[[{
-    {
-        type = "create-entity",
-        entity_name = "explosion-hit"
-    },
-    {
-        type = "damage",
-        damage = {
-                    { amount = 5 , type = "physical"},
-                    { amount = 5 , type = "explosive"}
-                 }
-    },
-    {
-        type = "nested-result",
-        action =
-        {
-            type = "area",
-            perimeter = 4,
-            action_delivery =
-            {
-                type = "instant",
-                target_effects =
-                {
-                    {
-                        type = "damage",
-                        damage = {amount = 5, type = "physical"}
-                    },
-                    {
-                        type = "create-entity",
-                        entity_name = "explosion-hit"
-                    }
-                }
-            }
-        }
-    }
-}]]--
+
 
 data.raw.ammo["shotgun-shell"].magazine_size = 4 -- 10
 data.raw.ammo["piercing-shotgun-shell"].magazine_size = 4 -- 10
@@ -165,7 +137,7 @@ data.raw.projectile["shotgun-pellet"].action.action_delivery.target_effects =
     },
     {
         type = "damage",
-        damage = {amount = 2, type = "explosion"}
+        damage = {amount = .5, type = "explosion"}
     }
 }
 data.raw.projectile["piercing-shotgun-pellet"].action.action_delivery.target_effects =
@@ -176,7 +148,7 @@ data.raw.projectile["piercing-shotgun-pellet"].action.action_delivery.target_eff
     },
     {
         type = "damage",
-        damage = { amount = 4 , type = "explosion"}
+        damage = { amount = 2 , type = "explosion"}
     }
 }
 
@@ -449,7 +421,7 @@ data.raw["ammo"]["flame-thrower-ammo"].ammo_type =
                     },
                     {
                         type = "damage",
-                        damage = { amount = 3, type="fire"}
+                        damage = { amount = 2, type="fire"}
                     }
                 }
             }
@@ -475,7 +447,7 @@ data.raw["ammo"]["flame-thrower-ammo"].ammo_type =
                     },
                     {
                         type = "damage",
-                        damage = { amount = 3, type="fire"}
+                        damage = { amount = 2, type="fire"}
                     }
                 }
             }
@@ -501,14 +473,14 @@ data.raw["ammo"]["flame-thrower-ammo"].ammo_type =
                     },
                     {
                         type = "damage",
-                        damage = { amount = 3, type="fire"}
+                        damage = { amount = 2, type="fire"}
                     }
                 }
             }
         },
         {
             type = "direct",
-            repeat_count = 4,
+            repeat_count = 2,
             action_delivery =
             {
                 type = "projectile",
@@ -569,10 +541,10 @@ data:extend(
                     {
                         type = "create-entity",
                         entity_name = "flame-thrower-cloud"
-                    }--[[,
-                    {
+                    },
+                    --[[{
                         type = "damage",
-                        damage = { amount = 0.25, type = "fire"}
+                        damage = { amount = 8, type = "fire"}
                     }]]--
                 }
             }
@@ -632,7 +604,7 @@ data:extend(
                             target_effects =
                             {
                                 type = "damage",
-                                damage = { amount = 1.0, type = "fire"}
+                                damage = { amount = 0.5, type = "fire"}
                             }
                         }
                     }
